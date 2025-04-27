@@ -153,6 +153,7 @@ const Navbar = () => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="text-center"
       >
         <Box sx={modalStyle}>
           <Typography

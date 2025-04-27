@@ -9,18 +9,17 @@ const Koncerty = () => {
         KONCERTY
       </h1>
       <ul className="text-center p-4 text-md lg:text-xl text-gray-300">
+        {loading && <span className="loading loading-spinner"></span>}
         {!loading &&
           koncerts &&
           koncerts.map((koncert) => (
-            <li key={koncert._id} className="p-3">
+            <li key={koncert._id} className="p-1">
               <p>
                 {koncert.denVTydnu} {koncert.datumString} -
                 <b> {koncert.mesto}</b> - {koncert.text}
               </p>
             </li>
           ))}
-
-        {loading && <span className="loading loading-spinner"></span>}
       </ul>
     </div>
   );
