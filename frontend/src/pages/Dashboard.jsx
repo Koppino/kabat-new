@@ -133,7 +133,7 @@ const Dashboard = () => {
             </div>
           </form>
         </div>
-        <div>{inputs.denVTydnu}</div>
+
         <Link className="btn" onClick={logoutHandler}>
           ODHLASIT
         </Link>

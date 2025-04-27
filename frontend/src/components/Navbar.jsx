@@ -49,7 +49,7 @@ const Navbar = () => {
             >
               <GiHamburgerMenu className="text-gray-200" />
             </a>
-            <ul className="md:flex md:flex-row px-3 tracking-widest hidden">
+            <ul className="md:flex md:flex-row px-3 tracking-widest hidden text-gray-200">
               <li className="px-2 hover:opacity-80 cursor-pointer">
                 <a href="/#uvod">ÚVOD</a>
               </li>
