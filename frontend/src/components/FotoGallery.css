@@ -1,0 +1,39 @@
+.crsl {
+
+    margin: auto;
+    background-color: rgba(11, 11, 11, 0.643);
+    padding: 3em;
+    margin-top: 1em;
+    border-radius: 12px;
+}
+
+.crsl img {
+    object-fit: cover;
+    height: auto;
+}
+
+.thumbs-wrapper {
+    height: 60px;
+    object-fit: contain;
+}
+
+.thumb {
+    height: 60px;
+    border: none !important;
+}
+
+.selected {
+
+    border: 2px solid white !important;
+
+
+}
+
+.thumb img {
+    object-fit: contain;
+    height: 60px;
+}
+
+.carousel {
+    z-index: 0
+}

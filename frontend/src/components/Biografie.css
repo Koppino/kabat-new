@@ -1,0 +1,81 @@
+.biografie-container {
+    background-color: rgba(11, 11, 11, 0.643);
+    max-width: 1280px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.cards {
+    padding-inline: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding-block: 40px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: rgba(38, 38, 38, 0.73);
+    padding: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: rgb(171, 167, 167);
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.card .l {
+    vertical-align: baseline;
+    text-align: center;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.card img {
+    margin: auto;
+    border-radius: 6px;
+}
+
+.card h1 {
+    font-size: 21px;
+    padding-block: 4px;
+    color: rgb(222, 221, 221);
+}
+
+.card h3 {
+    padding-bottom: 6px;
+}
+
+.l p {
+    padding-block: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cards {
+        width: 100%;
+        display: block;
+        margin: auto
+    }
+
+    /* For mobile phones: */
+    .card {
+        flex-direction: column;
+        width: 100%;
+        margin-block: 16px;
+
+    }
+
+    .card .l {}
+
+    .card .r {}
+}
