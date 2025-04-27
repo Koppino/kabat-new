@@ -40,7 +40,13 @@ const Navbar = () => {
       <div className="w-full  bg-[#1a1d24] sticky top-0 z-[999999]">
         <div className="w-full max-w-[1280px] mx-auto h-16 items-center flex justify-between special-gothic-condensed-one-regular bg-[#1a1d24]">
           <h1 className="px-3 text-4xl tracking-widest text-red-800">
-            <a href="/#uvod">KABÁT TRIBUTE</a>
+            <a href="/#uvod">
+              <img
+                alt="logo"
+                src="https://kabat-tribute.cz/assets/LogoPNG-b14256f1.png"
+                className="h-[40px]"
+              />
+            </a>
           </h1>
           <nav className="">
             <a
