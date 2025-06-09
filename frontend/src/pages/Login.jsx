@@ -12,37 +12,42 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-w-96 mx-auto rounded-4xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 size-[90%] max-w-[1280px] mx-auto my-10 bg-[rgba(0,0,0,.5)] p-5">
+    <div className="flex flex-col items-center justify-center min-w-96 mx-auto bg-slate-800 bg-opacity-90 shadow-xl rounded-lg w-full sm:w-3/4 md:w-1/2 lg:w-1/3 p-5 mt-7">
       <div className="h-full w-full ">
-        <h1 className="text-3xl text-center">LOGIN</h1>
+        <h1 className="text-3xl text-center text-white font-semibold mb-6">
+          LOGIN
+        </h1>
         <form onSubmit={handleLogin}>
-          <div>
+          <div className="mb-4">
             <label className="label p-2">
-              <span className="text-base label-text">Username</span>
+              <span className="text-sm text-gray-300">Username</span>
             </label>
             <input
               type="text"
               placeholder="Enter username"
-              className="w-full input input-bordered h-10"
+              className="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          <div>
+          <div className="mb-4">
             <label className="label p-2">
-              <span className="text-base label-text">Password</span>
+              <span className="text-sm text-gray-300">Password</span>
             </label>
             <input
               type="password"
               placeholder="Enter password"
-              className="w-full input input-bordered h-10"
+              className="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
 
           <div className="my-4">
-            <button className="btn btn-block btn-sm mt-2" disabled={loading}>
+            <button
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md focus:outline-none focus:shadow-outline transition duration-150 ease-in-out mt-6"
+              disabled={loading}
+            >
               {loading ? (
                 <span className="loading loading-spinner"></span>
               ) : (
