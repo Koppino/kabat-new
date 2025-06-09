@@ -1,21 +1,17 @@
 .kontakty-container {
-    margin-top: 120px;
-    border-radius: 8px;
-    background-color: rgba(11, 11, 11, 0.643);
+    /* margin-top, border-radius, background-color, padding-block, padding-inline removed to defer to Tailwind in JSX */
     min-height: 400px;
     text-align: center;
-    padding-block: 40px;
-    padding-inline: 20px;
     font-family: "Poppins", sans-serif;
 }
 
 .kontakty-container p {
-    color: rgb(193, 193, 193);
+    color: rgb(229, 231, 235); /* Tailwind's text-gray-200 */
     font-size: 25px;
     margin-bottom: 39px;
 }
 
 .kontakty-container div {
     font-size: 22px;
-    color: rgb(233, 230, 230);
+    color: rgb(233, 230, 230); /* Kept as is, very close to text-gray-200 */
 }

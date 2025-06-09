@@ -1,34 +1,43 @@
 .modal-nadpis {
     font-family: "Poppins", sans-serif;
-    font-size: 30px !important;
-    color: rgb(230, 230, 230);
+    font-size: 30px; /* Attempting to remove !important */
+    color: rgb(229, 231, 235); /* Tailwind's text-gray-200 */
 }
 
 .modal-link {
     text-decoration: underline;
-    color: gray;
+    color: rgb(156, 163, 175); /* Tailwind's gray-400 */
+}
+
+.modal-link:hover {
+    opacity: 0.8;
 }
 
 
 .mobile-menu {
     position: fixed;
     display: block;
-    align-items: center;
-    justify-content: center;
+    /* align-items, justify-content, text-align are useful for flex/grid, but display is block. Keeping text-align. */
     text-align: center;
     width: 100%;
-    background-color: #1a1d24;
-    padding-block: 20px;
+    background-color: #1a1d24; /* Already #1a1d24 */
+    padding-block: 20px; /* Consider replacing with py-5 in JSX */
     z-index: 9999999;
-    border-bottom: 3px solid rgb(217, 213, 213);
+    border-bottom: 3px solid rgb(75, 85, 99); /* Tailwind's gray-600 */
 }
 
 .mobile-menu a {
     display: block;
     font-size: 18px;
     text-decoration: none;
+    color: rgb(229, 231, 235); /* Tailwind's text-gray-200 */
+    font-family: "Poppins", sans-serif; /* Explicitly setting Poppins for links */
+}
+
+.mobile-menu a:hover {
+    opacity: 0.8;
 }
 
 .css-1we2s36 {
-    width: 90% !important;
+    width: 90% !important; /* Leaving as is for now */
 }

@@ -1,8 +1,8 @@
 .biografie-container {
-    background-color: rgba(11, 11, 11, 0.643);
+    /* background-color removed, handled by Tailwind in JSX */
     max-width: 1280px;
     margin: auto;
-    border-radius: 12px;
+    /* border-radius removed, handled by Tailwind (rounded-4xl) in JSX */
 }
 
 .cards {
@@ -17,7 +17,7 @@
 }
 
 .card {
-    background-color: rgba(38, 38, 38, 0.73);
+    background-color: rgb(31, 41, 55); /* Tailwind's gray-800 */
     padding: 1rem;
     align-content: center;
     justify-content: center;
@@ -25,8 +25,8 @@
     justify-items: center;
     display: flex;
     flex-direction: row;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    color: rgb(171, 167, 167);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; /* Kept existing shadow */
+    color: rgb(229, 231, 235); /* Tailwind's text-gray-200 */
     justify-content: space-between;
     width: 100%;
     margin: auto;
@@ -48,7 +48,7 @@
 .card h1 {
     font-size: 21px;
     padding-block: 4px;
-    color: rgb(222, 221, 221);
+    color: rgb(229, 231, 235); /* Tailwind's text-gray-200 */
 }
 
 .card h3 {
@@ -72,10 +72,9 @@
         flex-direction: column;
         width: 100%;
         margin-block: 16px;
-
     }
 
-    .card .l {}
+    /* .card .l {} removed empty rule */
 
-    .card .r {}
+    /* .card .r {} removed empty rule */
 }

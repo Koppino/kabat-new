@@ -1,28 +1,24 @@
-.fb-btn {
+.social-btn {
     border: none;
+    padding: 1em;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; /* Already set in body, but good for specificity */
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex; /* To align icon and text */
+    align-items: center; /* To align icon and text */
+}
+
+.social-btn.fb {
     background-color: blue;
-    padding: 1em;
-    font-size: 20px;
-    color: white;
-    margin-right: 1em;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
+    margin-right: 1em; /* Kept margin-right for fb button as it was there */
 }
 
-.yt-btn {
-    border: none;
+.social-btn.yt {
     background-color: red;
-    padding: 1em;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
 }
-
 
 .icon {
     margin-right: 8px;
