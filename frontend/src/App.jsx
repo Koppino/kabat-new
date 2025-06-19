@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar2";
 import Home from "./pages/Home";
 import { Navigate, Routes, Route } from "react-router-dom";
 import { useAuthContext } from "./context/AuthContext";
@@ -21,7 +21,10 @@ function App() {
             className="bg-cover bg-center  w-full"
           />
           <div className="absolute bottom-[25%]">
-            <a href="https://www.facebook.com/KabatTribute/" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=61577700536300"
+              target="_blank"
+            >
               <button className="fb-btn">
                 <FaFacebookF className="icon inline" /> FACEBOOK
               </button>
